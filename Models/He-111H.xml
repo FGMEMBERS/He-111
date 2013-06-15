@@ -73,8 +73,37 @@
 		<max-m>30</max-m>
 	</animation>
 
+ <model>
+    <name>vdm1</name>
+    <path>Aircraft/He-111/Models/vdm1.xml</path>
+    <offsets>
+   <x-m>-7.656</x-m>
+   <y-m>-2.632</y-m>
+   <z-m>-0.437</z-m>
+    </offsets>
+  </model>	
+ <model>
+    <name>vdm2</name>
+    <path>Aircraft/He-111/Models/vdm2.xml</path>
+    <offsets>
+   <x-m>-7.656</x-m>
+   <y-m>2.632</y-m>
+   <z-m>-0.437</z-m>
+    </offsets>
+  </model>
 
-
+  
+   <model>
+    <name>nosegun</name>
+    <path>Aircraft/He-111/Models/mg81.ac</path>
+    <offsets>
+   <x-m>-8.4</x-m>
+   <y-m>0.2</y-m>
+   <z-m>-0.25</z-m>
+    </offsets>
+  </model>	
+  
+  
 <!--prop 
 
   <model>
@@ -585,7 +614,7 @@
  <animation>
   <type>rotate</type>
   <object-name>geardoor2.L</object-name>
-  <property>gear/gear[1]/position-norm</property>
+  <property>gear/gear[0]/position-norm</property>
   <interpolation>
    <entry>
     <ind>0.0</ind>
@@ -593,31 +622,28 @@
    </entry>
    <entry>
     <ind>0.2</ind>
-    <dep>-70</dep>
+    <dep>70</dep>
    </entry>
    <entry>
     <ind>1.00</ind>
-    <dep>-70</dep>
+    <dep>70</dep>
    </entry>
   </interpolation>
   <center>
-   <x-m>7.593</x-m>
-   <y-m>-3.877</y-m>
-   <z-m>-0.176</z-m>
+   <x-m>4.921</x-m>
+   <y-m>-2.2</y-m>
+   <z-m>-0.87</z-m>
   </center>
   <axis>
-   <x1-m>6.387</x1-m>
-   <y1-m>-4.027</y1-m>
-   <z1-m>-0.263</z1-m>
-   <x2-m>8.8</x2-m>
-   <y2-m>-3.727</y2-m>
-   <z2-m>-0.09</z2-m>
+    <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
   </axis>
  </animation>
  <animation>
   <type>rotate</type>
   <object-name>geardoor1.L</object-name>
-  <property>gear/gear[1]/position-norm</property>
+  <property>gear/gear[0]/position-norm</property>
   <interpolation>
    <entry>
     <ind>0.0</ind>
@@ -638,22 +664,83 @@
    <z-m>-0.719</z-m>
   </center>
   <axis>
-   <x1-m>-3.351</x1-m>
-   <y1-m>-3.001</y1-m>
-   <z1-m>-0.683</z1-m>
-   <x2-m>-5.339</x2-m>
-   <y2-m>-3.193</y2-m>
-   <z2-m>-0.756</z2-m>
+   <x2-m>3.351</x2-m>
+   <y2-m>-3.001</y2-m>
+   <z2-m>-0.683</z2-m>
+   <x1-m>5.339</x1-m>
+   <y1-m>-3.193</y1-m>
+   <z1-m>-0.756</z1-m>
   </axis>
  </animation>
 
+ <animation>
+  <type>rotate</type>
+  <object-name>geardoor2.R</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0.0</dep>
+   </entry>
+   <entry>
+    <ind>0.2</ind>
+    <dep>70</dep>
+   </entry>
+   <entry>
+    <ind>1.00</ind>
+    <dep>70</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>4.921</x-m>
+   <y-m>2.2</y-m>
+   <z-m>-0.87</z-m>
+  </center>
+  <axis>
+    <x>-1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>geardoor1.R</object-name>
+  <property>gear/gear[1]/position-norm</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0.0</dep>
+   </entry>
+   <entry>
+    <ind>0.2</ind>
+    <dep>-70</dep>
+   </entry>
+   <entry>
+    <ind>1.00</ind>
+    <dep>-70</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>-4.345</x-m>
+   <y-m>3.097</y-m>
+   <z-m>-0.719</z-m>
+  </center>
+  <axis>
+   <x2-m>3.351</x2-m>
+   <y2-m>3.001</y2-m>
+   <z2-m>-0.683</z2-m>
+   <x1-m>5.339</x1-m>
+   <y1-m>3.193</y1-m>
+   <z1-m>-0.756</z1-m>
+  </axis>
+ </animation>
 
 
  <animation>
   <type>spin</type>
   <object-name>wheel1.L</object-name>
   <object-name>wheel2.L</object-name>
-  <property>gear/gear[1]/rollspeed-ms</property>
+  <property>gear/gear[0]/rollspeed-ms</property>
   <factor>-20.0</factor>
   <center>
    <x-m>-4.962</x-m>
@@ -669,14 +756,14 @@
 
  <animation>
   <type>spin</type>
-  <object-name>wheel.F</object-name>
-  <object-name>wheel2.F</object-name>
-  <property>gear/gear[0]/rollspeed-ms</property>
+  <object-name>wheel1.R</object-name>
+  <object-name>wheel2.R</object-name>
+  <property>gear/gear[1]/rollspeed-ms</property>
   <factor>-20.0</factor>
   <center>
-   <x-m>1.68</x-m>
-   <y-m>0.0</y-m>
-   <z-m>-2.167</z-m>
+   <x-m>-4.962</x-m>
+   <y-m>3.275</y-m>
+   <z-m>-2.358</z-m>
   </center>
   <axis>
    <x>0.0</x>
@@ -684,6 +771,8 @@
    <z>0.0</z>
   </axis>
  </animation>
+
+
 <!-- flaps -->
  <animation>
   <type>rotate</type>
@@ -950,20 +1039,20 @@
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
-    <object-name>guns.L</object-name>
-    <object-name>guns.R</object-name>
-    <object-name>wing.R</object-name>
+    <object-name>mast</object-name>
+    <object-name>cooler.L</object-name>
+    <object-name>cooler.R</object-name>
     <object-name>wing.L</object-name>
+		<object-name>wing.R</object-name>
     <object-name>engine.R</object-name>
     <object-name>engine.L</object-name>
     <object-name>aileron.L</object-name>
     <object-name>aileron.R</object-name>
-    <object-name>outflap.L</object-name>
-    <object-name>outflap.R</object-name>
-    <object-name>inflap.L</object-name>
-    <object-name>inflap.R</object-name>
-    <object-name>geardoorF.L</object-name>
-    <object-name>geardoorF.R</object-name>
+    <object-name>flap.L</object-name>
+    <object-name>flap.R</object-name>
+
+    <object-name>pilotcanopy</object-name>
+    <object-name>dorsal</object-name>
     <object-name>geardoor1.L</object-name>
     <object-name>geardoor1.R</object-name>
     <object-name>geardoor2.L</object-name>
@@ -972,20 +1061,59 @@
     <object-name>bombbay1.R</object-name>
     <object-name>bombbay2.L</object-name>
     <object-name>bombbay2.R</object-name>
-    <object-name>gunport.L</object-name>
-    <object-name>gunport.R</object-name>
+    <object-name>nose</object-name>
+    <object-name>viewport.R</object-name>
     <object-name>reardoor</object-name>
     <object-name>windshield.L</object-name>
     <object-name>windshield.R</object-name>
     <object-name>elevator.L</object-name>
     <object-name>elevator.R</object-name>
-    <object-name>horstab.L</object-name>
-    <object-name>horstab.R</object-name>
+    <object-name>stab.L</object-name>
+    <object-name>stab.R</object-name>
     <object-name>vstab</object-name>
     <object-name>rudder</object-name>
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>b26-1.png</texture>
+    <texture>he111-1.png</texture>
   </animation>
 
+<!--
+    	<effect>
+		<inherits-from>Aircraft/He-111/Models/Effects/bumpspec</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>mast</object-name>
+    <object-name>cooler.L</object-name>
+    <object-name>cooler.R</object-name>
+    <object-name>wing.L</object-name>
+		<object-name>wing.R</object-name>
+    <object-name>engine.R</object-name>
+    <object-name>engine.L</object-name>
+    <object-name>aileron.L</object-name>
+    <object-name>aileron.R</object-name>
+    <object-name>flap.L</object-name>
+    <object-name>flap.R</object-name>
+
+    <object-name>pilotcanopy</object-name>
+    <object-name>dorsal</object-name>
+    <object-name>geardoor1.L</object-name>
+    <object-name>geardoor1.R</object-name>
+    <object-name>geardoor2.L</object-name>
+    <object-name>geardoor2.R</object-name>
+    <object-name>bombbay1.L</object-name>
+    <object-name>bombbay1.R</object-name>
+    <object-name>bombbay2.L</object-name>
+    <object-name>bombbay2.R</object-name>
+    <object-name>nose</object-name>
+    <object-name>viewport.R</object-name>
+    <object-name>reardoor</object-name>
+    <object-name>windshield.L</object-name>
+    <object-name>windshield.R</object-name>
+    <object-name>elevator.L</object-name>
+    <object-name>elevator.R</object-name>
+    <object-name>stab.L</object-name>
+    <object-name>stab.R</object-name>
+    <object-name>vstab</object-name>
+    <object-name>rudder</object-name>
+	</effect>
+-->
 </PropertyList>

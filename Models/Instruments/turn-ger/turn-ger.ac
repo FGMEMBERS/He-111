@@ -437,7 +437,7 @@ OBJECT poly
 name "Circle.001"
 data 10
 Circle.002
-texture "bezel.png"
+texture "../common/bezel.png"
 texrep 1 1
 crease 30.000000
 numvert 296
@@ -2535,7 +2535,7 @@ OBJECT poly
 name "Circle.002"
 data 10
 Circle.004
-texture "bezel.png"
+texture "../common/bezel.png"
 texrep 1 1
 crease 30.000000
 numvert 200
@@ -3857,7 +3857,7 @@ OBJECT poly
 name "Circle.003"
 data 6
 Circle
-texture "bezel.png"
+texture "../common/bezel.png"
 texrep 1 1
 crease 30.000000
 numvert 360

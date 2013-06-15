@@ -18,6 +18,12 @@ don@sol2500.net
   <description>He-111 H</description>
   <author>Detlef Faber</author>
   <status>beta</status>
+  <rating>
+    <FDM type="int">3</FDM>
+    <systems type="int">2</systems>
+    <model type="int">3</model>
+    <cockpit type="int">3</cockpit>
+  </rating>
   <flight-model>yasim</flight-model>
   <aero>he-111h-yasim</aero>
   <fuel-fraction>1.0</fuel-fraction>
@@ -45,6 +51,7 @@ don@sol2500.net
    <path>Aircraft/He-111/Models/He-111H.xml</path>
   <livery>
     <file/>
+		<texture/>
   </livery>
    <crew>
      <pilot>
@@ -302,7 +309,7 @@ Reduce Speed to 160 mph, drop Gear and Flaps. approach at 140 mph and do not fla
 	<menubar>
 		<default>
 			<menu n="10">
-				<label>B-26</label>
+				<label>He-111</label>
 					<enabled type="bool">true</enabled>
 <!--
 					<item>
@@ -656,9 +663,9 @@ Reduce Speed to 160 mph, drop Gear and Flaps. approach at 140 mph and do not fla
      </keyboard>
  </input>
 	<nasal>
-		<b26>
-			<file>Aircraft/b26/Nasal/b-26.nas</file>
-		</b26>
+		<he111>
+			<file>Aircraft/He-111/Nasal/He-111.nas</file>
+		</he111>
 
 	</nasal>
 
