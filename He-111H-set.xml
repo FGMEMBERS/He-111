@@ -24,6 +24,19 @@ don@sol2500.net
     <model type="int">3</model>
     <cockpit type="int">3</cockpit>
   </rating>
+  <tags>
+    <tag>bomber</tag>
+    <tag>1930s</tag>
+    <tag>1940s</tag>
+    <tag>1950s</tag>
+    <tag>ww2</tag>
+    <tag>retractable-gear</tag>
+    <tag>tail-dragger</tag>
+    <tag>propeller</tag>
+    <tag>piston</tag>
+    <tag>twin-engine</tag>
+    <tag>variable-pitch</tag>
+   </tags>
   <flight-model>yasim</flight-model>
   <aero>he-111h-yasim</aero>
   <fuel-fraction>1.0</fuel-fraction>
